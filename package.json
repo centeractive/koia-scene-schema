@@ -1,0 +1,37 @@
+{
+  "name": "@centeractive/koia-scene-schema",
+  "version": "1.0.0",
+  "description": "JSON Schema contract for scenes that external programs write into CouchDB for Koia",
+  "author": {
+    "name": "centeractive ag",
+    "email": "info@centeractive.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/centeractive/koia-scene-schema#readme",
+  "repository": "github:centeractive/koia-scene-schema",
+  "keywords": ["koia", "json-schema", "couchdb", "scene"],
+  "type": "module",
+  "files": [
+    "dist",
+    "schemas"
+  ],
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts"
+    },
+    "./schemas.json": "./dist/schemas.json",
+    "./examples.json": "./dist/examples.json",
+    "./schemas/*": "./schemas/*"
+  },
+  "scripts": {
+    "bundle": "node scripts/bundle.mjs",
+    "test": "vitest run",
+    "prepublishOnly": "npm run bundle"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "json-schema-to-typescript": "16.0.0",
+    "vitest": "5.0.5"
+  }
+}

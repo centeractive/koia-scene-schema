@@ -1,0 +1,10 @@
+node_modules/
+dist/
+packages/java/target/
+packages/python/dist/
+packages/python/**/__pycache__/
+packages/python/*.egg-info/
+*.tgz
+bash.exe.stackdump
+.venv/
+packages/java/.flattened-pom.xml

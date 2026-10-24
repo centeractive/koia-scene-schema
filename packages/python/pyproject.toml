@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "koia-scene-model"
+dynamic = ["version"]
+description = "Pydantic models generated from the Koia scene JSON Schema, for programs that write scenes into CouchDB for Koia"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "centeractive ag", email = "info@centeractive.com" }]
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2,<3"]
+
+[project.urls]
+Homepage = "https://github.com/centeractive/koia-scene-schema"
+
+[project.optional-dependencies]
+test = ["pytest", "jsonschema==4.26.0"]
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { root = "../.." }
+
+[tool.hatch.build.hooks.custom]
+path = "hatch_build.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["koia_scene_model"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

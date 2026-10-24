@@ -1,0 +1,131 @@
+{
+  "_id": "sample_fruit-sales_en",
+  "creationTime": 1767225600000,
+  "database": "data_1",
+  "name": "Fruit sales (sample)",
+  "shortDescription": "Fruit sales by date, region, channel and product",
+  "context": [
+    {
+      "name": "Source",
+      "value": "Koia sample data"
+    }
+  ],
+  "columns": [
+    {
+      "name": "Date",
+      "dataType": "Time",
+      "width": 10,
+      "indexed": true,
+      "format": "d MMM yyyy"
+    },
+    {
+      "name": "Region",
+      "dataType": "Text",
+      "width": 10,
+      "indexed": true
+    },
+    {
+      "name": "Channel",
+      "dataType": "Text",
+      "width": 10,
+      "indexed": true
+    },
+    {
+      "name": "Product",
+      "dataType": "Text",
+      "width": 10,
+      "indexed": true
+    },
+    {
+      "name": "Quantity",
+      "dataType": "Number",
+      "width": 10,
+      "indexed": true
+    },
+    {
+      "name": "Revenue",
+      "dataType": "Number",
+      "width": 10,
+      "indexed": true
+    }
+  ],
+  "columnMappings": [
+    {
+      "source": {
+        "name": "Date",
+        "dataType": "Text",
+        "format": "yyyy-MM-dd"
+      },
+      "target": {
+        "name": "Date",
+        "dataType": "Time",
+        "width": 10,
+        "indexed": true,
+        "format": "d MMM yyyy"
+      }
+    },
+    {
+      "source": {
+        "name": "Region",
+        "dataType": "Text"
+      },
+      "target": {
+        "name": "Region",
+        "dataType": "Text",
+        "width": 10,
+        "indexed": true
+      }
+    },
+    {
+      "source": {
+        "name": "Channel",
+        "dataType": "Text"
+      },
+      "target": {
+        "name": "Channel",
+        "dataType": "Text",
+        "width": 10,
+        "indexed": true
+      }
+    },
+    {
+      "source": {
+        "name": "Product",
+        "dataType": "Text"
+      },
+      "target": {
+        "name": "Product",
+        "dataType": "Text",
+        "width": 10,
+        "indexed": true
+      }
+    },
+    {
+      "source": {
+        "name": "Quantity",
+        "dataType": "Number"
+      },
+      "target": {
+        "name": "Quantity",
+        "dataType": "Number",
+        "width": 10,
+        "indexed": true
+      }
+    },
+    {
+      "source": {
+        "name": "Revenue",
+        "dataType": "Number"
+      },
+      "target": {
+        "name": "Revenue",
+        "dataType": "Number",
+        "width": 10,
+        "indexed": true
+      }
+    }
+  ],
+  "config": {
+    "savedViews": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "expectedErrorPath": "/schemaVersion",
+  "document": {
+    "creationTime": 1767225600000,
+    "name": "Minimal",
+    "shortDescription": "",
+    "database": "data_1",
+    "columns": [
+      {
+        "name": "Data",
+        "dataType": "Text"
+      }
+    ],
+    "schemaVersion": 1
+  }
+}

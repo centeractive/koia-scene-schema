@@ -1,0 +1,41 @@
+{
+  "creationTime": 1767225600000,
+  "name": "Tab1",
+  "shortDescription": "Profile: Default",
+  "database": "data_1",
+  "context": [
+    {
+      "name": "Profile",
+      "value": "Default"
+    },
+    {
+      "name": "Search Criteria",
+      "value": "Level = ERROR"
+    }
+  ],
+  "columns": [
+    {
+      "name": "Date/Time",
+      "dataType": "Time",
+      "width": 135,
+      "format": "yyyy-MM-dd HH:mm:ss,SSS",
+      "indexed": true
+    },
+    {
+      "name": "Level",
+      "dataType": "Text",
+      "width": 80,
+      "indexed": true
+    },
+    {
+      "name": "Data",
+      "dataType": "Text",
+      "width": 400,
+      "indexed": false
+    }
+  ],
+  "config": {
+    "records": [],
+    "views": []
+  }
+}

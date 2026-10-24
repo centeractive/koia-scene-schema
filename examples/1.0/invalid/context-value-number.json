@@ -1,0 +1,21 @@
+{
+  "expectedErrorPath": "/context/0/value",
+  "document": {
+    "creationTime": 1767225600000,
+    "name": "Minimal",
+    "shortDescription": "",
+    "database": "data_1",
+    "columns": [
+      {
+        "name": "Data",
+        "dataType": "Text"
+      }
+    ],
+    "context": [
+      {
+        "name": "Profile",
+        "value": 7
+      }
+    ]
+  }
+}

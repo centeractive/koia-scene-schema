@@ -1,0 +1,15 @@
+{
+  "expectedErrorPath": "/creationTime",
+  "document": {
+    "creationTime": "2026-01-01",
+    "name": "Minimal",
+    "shortDescription": "",
+    "database": "data_1",
+    "columns": [
+      {
+        "name": "Data",
+        "dataType": "Text"
+      }
+    ]
+  }
+}
