@@ -8,7 +8,10 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/centeractive/koia-scene-schema#readme",
-  "repository": "github:centeractive/koia-scene-schema",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/centeractive/koia-scene-schema.git"
+  },
   "keywords": ["koia", "json-schema", "couchdb", "scene"],
   "type": "module",
   "files": [
